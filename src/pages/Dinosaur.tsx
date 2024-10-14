@@ -8,7 +8,9 @@ export default function Dinosaur() {
 
   useEffect(() => {
     (async () => {
-      const resp = await fetch(`/api/dinosaurs/${selectedDinosaur}`);
+      const resp = await fetch(
+        `http://localhost:8000/api/dinosaurs/${selectedDinosaur}`
+      );
       const dino = (await resp.json()) as Dino;
       setDino(dino);
     })();

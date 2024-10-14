@@ -7,7 +7,7 @@ export default function Index() {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(`/api/dinosaurs/`);
+      const response = await fetch(`http://localhost:8000/api/dinosaurs/`);
       const allDinosaurs = (await response.json()) as Dino[];
       setDinosaurs(allDinosaurs);
     })();
