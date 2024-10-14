@@ -1,0 +1,7 @@
+{
+  "nodeModulesDir": "auto",
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@^17.1.0",
+    "@tajpouria/cors": "jsr:@tajpouria/cors@^1.2.1"
+  }
+}
